@@ -39,8 +39,8 @@
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
     <table th:replace = "fragments::job-listing"></table>
 
-    <div th:if="${jobs}">
-        <h3 th:text="${jobs.size()} + ' Results'"></h3>
+    <div th:if = "${jobs}">
+        <h3 th:text = "${jobs.size()} + ' Results'"></h3>
 
         <table class = "job-listing" th:each = "job: ${jobs}">
             <tr th:each = "line: ${job}">
